@@ -21,7 +21,7 @@ This project analyzes approximately 3 million flight records to identify:
 - Operational performance indicators
 - Key insights through an interactive Power BI dashboard
 
-The overall workflow includes data cleaning, exploratory data analysis, SQL analysis, and dashboard development.
+The overall workflow includes data cleaning, exploratory data analysis, and dashboard development.
 
 ---
 
