@@ -225,26 +225,6 @@ aviation-data-analysis/
 
 ---
 
-🚀 How to Run the Project
-
-1. Clone the Repository
-
-git clone https://github.com/Shreyas1924/aviation-data-analysis.git
-
-2. Open the Jupyter Notebook
-
-Open:
-
-flights.ipynb
-
-using Jupyter Notebook, JupyterLab, or VS Code.
-
-3. Explore the Power BI Dashboard
-
-Download the ".pbix" file using the Power BI Dashboard link provided above and open it in Microsoft Power BI Desktop.
-
----
-
 👥 Project Team
 
 Project Developed By:
@@ -259,7 +239,7 @@ Project Area: Data Analytics
 
 📌 Conclusion
 
-This project demonstrates how large-scale flight data can be transformed into meaningful analytical insights using Python, SQL, and Power BI.
+This project demonstrates how large-scale flight data can be transformed into meaningful analytical insights using Python, and Power BI.
 
 The combination of data cleaning, exploratory analysis, and interactive visualization provides a structured approach to understanding flight delays, airline performance, airport operations, routes, and cancellations.
 
