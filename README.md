@@ -55,12 +55,12 @@ Due to GitHub file-size limitations, the complete dataset is hosted externally.
 
 Full Dataset
 
-Full Dataset (~650 MB):
+Full bi dashboard (.pbix):download the below link to view full dashboard
 https://mega.nz/file/gUdllLoB#UGcQB_WHEBNMezSlTYF1Y2aE1T3lztN0tpSFHcEo4Ak
-
+-->A smaller sample dashboard is included in the repository for demonstration and testing purposes.
 Power BI Dashboard
 
-Power BI Dashboard (.pbix):
+full dataset (.csv):
 https://mega.nz/file/4INCARDS#fNRVKw5IhkVKu6D2Np45bv0mWGqmhjJdQnga06xFMiY
 
 A smaller sample dataset is included in the repository for demonstration and testing purposes.
@@ -75,7 +75,6 @@ A smaller sample dataset is included in the repository for demonstration and tes
 - Matplotlib
 - Seaborn
 - Jupyter Notebook
-- SQL
 - Power BI
 - CSV
 
@@ -90,8 +89,6 @@ Data Understanding
 Data Cleaning & Preprocessing
        ↓
 Exploratory Data Analysis
-       ↓
-SQL Analysis
        ↓
 Power BI Dashboard
        ↓
@@ -168,83 +165,39 @@ Analyzed:
 - Airline-wise cancellations
 
 ---
+📌 Project Overview
 
-🗄️ SQL Analysis
-
-SQL was used to perform analytical queries on the cleaned flight data.
-
-Key SQL analysis includes:
-
-- Total flights by airline
-- Average departure delay
-- Average arrival delay
-- Cancelled flights by airline
-- Busiest airports
-- Frequently used routes
-- Airport-wise delay analysis
-- Delay category analysis
-- Cancellation code analysis
-
----
+- Analyzed flight operations data from 2019–2023 to understand flight delays, cancellations, airline performance, airport efficiency, and route performance.
+- Processed and explored flight data to identify operational patterns, delay trends, and performance differences.
+- Developed an interactive Power BI dashboard consisting of six pages for comprehensive flight operations analysis.
+- Analyzed airline-wise flight volumes and average arrival delays to compare airline performance.
+- Identified busy airports and airports experiencing higher average departure and arrival delays.
+- Examined major flight delay causes, including Carrier, Late Aircraft, Air Traffic (NAS), Weather, and Security.
+- Evaluated monthly flight volumes and seasonal variations in average arrival delays.
+- Compared flight routes based on frequency, average arrival delay, and route distance.
+- Created KPI cards, bar charts, line charts, pie charts, and interactive filters to make insights easy to understand.
+- Presented key findings through an executive summary dashboard to support data-driven decision-making.
 
 📊 Power BI Dashboard
 
-An interactive Power BI dashboard was developed to provide a visual overview of flight operations.
+- Airline Performance: Compared airlines by total flight volume and average arrival delay to identify differences in operational performance.
+- Airport Operations & Traffic Analysis: Analyzed the busiest airports and highlighted airports with higher average departure and arrival delays.
+- Flight Delay Cause Analysis: Compared delay minutes across Carrier, Late Aircraft, Air Traffic (NAS), Weather, and Security categories.
+- Seasonal Flight Delay Trends: Examined monthly flight volumes and average arrival delays to identify seasonal variations.
+- Flight Route Performance: Analyzed frequent routes, routes with higher average arrival delays, and the relationship between route distance and delays.
+- Executive Summary: Consolidated key performance indicators, including total flights analyzed, delayed flights, delay rate, average arrival delay, and total routes.
 
-Dashboard KPIs
+🔑 Key Insights
 
-- Total Flights: 2.92086M
-- Average Arrival Delay: 4.26
-- Average Airport Delay: 10.10
-
-Airline Analysis
-
-The dashboard compares:
-
-- Total flights by airline
-- Average delay by airline
-
-Southwest Airlines Co. has the highest displayed flight volume with approximately 557.01K flights.
-
-Among the displayed airlines, Allegiant Air has the highest average delay at 13.28.
-
-Airport Analysis
-
-The dashboard shows the top airports based on:
-
-- Average arrival delay
-- Average departure delay
-- Total flight volume
-
-PPG has the highest displayed average arrival delay among the top airports at 56.45.
-
-For total flight volume, ATL is the highest among the displayed airports with approximately 151K flights, followed by DFW (126K) and ORD (119K).
-
-Interactive Filters
-
-The dashboard includes interactive slicers such as:
-
-- Airline
-- Origin Airport
-
-These filters allow users to explore the data based on selected airlines and airports.
-
----
-
-🔍 Key Insights
-
-1. The dashboard represents approximately 2.92 million flights.
-2. The displayed average arrival delay is 4.26.
-3. Southwest Airlines Co. has the highest displayed flight volume at 557.01K.
-4. Delta Air Lines, American Airlines, and SkyWest Airlines also have high flight volumes.
-5. Allegiant Air has the highest displayed average airline delay at 13.28.
-6. JetBlue Airways and Frontier Airlines also show relatively high displayed average delays.
-7. The displayed average airport delay is 10.10.
-8. PPG has the highest displayed average arrival delay among the top airports at 56.45.
-9. ATL has the highest displayed total flight volume among the top airports at approximately 151K.
-10. DFW and ORD follow with approximately 126K and 119K flights respectively.
-
----
+- Approximately 3 million flights analyzed in the Executive Summary dashboard.
+- Approximately 913K delayed flights, with a displayed delay rate of 36.51%.
+- Average arrival delay of approximately 4.26 minutes.
+- Allegiant Air recorded the highest average arrival delay among the airlines displayed, at approximately 13.28 minutes.
+- Southwest Airlines had the highest flight volume in the displayed airline comparison.
+- Late Aircraft and Carrier delays were the largest contributors to total delay minutes in the displayed delay-cause analysis.
+- Pittsburgh International Airport (PPG) recorded the highest average departure delay among the airports displayed, at approximately 58.97 minutes.
+- The ORD–LGA route had the highest average arrival delay among the routes displayed, at approximately 10.87 minutes.
+- Monthly analysis highlighted variations in average arrival delays, with June and July showing higher values in the seasonal dashboard.
 
 💼 Business Value
 
@@ -266,6 +219,7 @@ The dashboard provides an interactive way to explore operational data and identi
 aviation-data-analysis/
 │
 ├── flights.ipynb
+|__flights projectt
 ├── sample_flight_data.csv
 └── README.md
 
